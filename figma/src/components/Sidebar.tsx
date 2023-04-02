@@ -4,7 +4,7 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/outline";
 
-export default function Sidebar() {
+export default function Sidebar():JSX.Element {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
 
   const handleClick = (index: number) => {

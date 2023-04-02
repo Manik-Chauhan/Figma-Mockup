@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 //import Something from './components/Something';
 
-function App() {
+function App():JSX.Element {
   return (
     <div>
     <Navbar/>

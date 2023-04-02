@@ -3,13 +3,19 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./perfios.png";
 
-const navigation = [
+
+type NavigationItem ={
+  name:string;
+  href:string;
+}
+
+const navigation:NavigationItem[] = [
   { name: "Home /", href: "#" },
   { name: "Product Documentation /", href: "#" },
   { name: "Api Documentation", href: "#" },
 ];
 
-export default function Navbar() {
+export default function Navbar():JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
